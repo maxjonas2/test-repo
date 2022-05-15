@@ -31,9 +31,9 @@ app.use("/home", express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
   res.render("index", {
-    title: "Hello Fucking World",
+    title: "Hello World",
     color: "red",
-    text: "This is an hbs-generated fucking page"
+    text: "This is an hbs-generated page"
   });
 });
 app.use("/friends", friendsRouter);
